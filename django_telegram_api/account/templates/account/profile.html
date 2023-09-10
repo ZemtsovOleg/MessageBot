@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} Profile {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <h1>Welcome, {{ user.name }}!</h1>
+    <br>
+
+    <div class="alert alert-primary" role="alert" style="width: fit-content;">
+        <strong>Token:</strong>
+        {{ user.token_telegram }}
+        <button class="btn btn-primary btn-sm" onclick="copyToClipboard('{{ user.token_telegram }}')">Сopy</button>
+    </div>
+
+    <p>Link to Telegram bot: <a href="https://t.me/Message_Duplicator_Bot?start={{ user.token_telegram }}" target="_blank">Message Duplicator Bot</a></p>
+
+</div>
+
+
+
+<script>
+    function copyToClipboard(text) {
+        var input = document.createElement('textarea');
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        alert('Token copied to clipboard: ' + text);
+    }
+</script>
+
+{% endblock %}
