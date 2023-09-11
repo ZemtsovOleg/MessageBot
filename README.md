@@ -25,17 +25,17 @@ MessageBot - это проект, который позволяет связат
 
    В Windows:
 
-   <pre>python -m venv venv</pre>
+   <pre lang="bash">python -m venv venv</pre>
 
    В macOS и Linux:
 
-   <pre>python3 -m venv venv</pre>
+   <pre lang="bash">python3 -m venv venv</pre>
 
 4. Активируйте виртуальное окружение (если оно не активировано):
 
    В Windows:
 
-   <pre>venv\Scripts\activate</pre>
+   <pre lang="bash">venv\Scripts\activate</pre>
 
    В macOS и Linux:
 
@@ -51,7 +51,7 @@ MessageBot - это проект, который позволяет связат
 
    В Windows:
 
-   <pre>setenv.bat</pre>
+   <pre lang="bash">setenv.bat</pre>
 
    В macOS и Linux:
 
@@ -67,7 +67,7 @@ MessageBot - это проект, который позволяет связат
 
    В Windows:
 
-   <pre>python manage.py makemigrations
+   <pre lang="bash">python manage.py makemigrations
    python manage.py migrate</pre>
 
    В macOS и Linux:
@@ -80,7 +80,7 @@ MessageBot - это проект, который позволяет связат
 
    В Windows:
 
-   <pre>python manage.py runserver</pre>
+   <pre lang="bash">python manage.py runserver</pre>
 
    В macOS и Linux:
 
@@ -91,7 +91,7 @@ MessageBot - это проект, который позволяет связат
 
 Для того чтобы Telegram знал, куда отправлять сообщения, выполните следующий запрос:
 
-   <pre>https://api.telegram.org/bot{токен телеграма}/setWebhook?url={url адрес сайта}/message</pre>
+   <pre lang="bash">https://api.telegram.org/bot{токен телеграма}/setWebhook?url={url адрес сайта}/message</pre>
 
 ## API Endpoints
 
