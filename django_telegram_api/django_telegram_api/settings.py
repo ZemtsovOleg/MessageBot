@@ -162,6 +162,9 @@ DJOSER = {
 }
 
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+
 TELEGRAM_TOKEN: Final = getenv('TELEGRAM_TOKEN')
 TELEGRAM_URL = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/'
 API_TOKEN: Final = getenv('API_TOKEN')
