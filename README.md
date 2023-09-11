@@ -23,24 +23,21 @@ MessageBot - это проект, который позволяет связат
 
 3. Создайте виртуальное окружение:
 
-В Windows:
+   В Windows:
 
-   ```bash
-   python -m venv venv
+   <pre>python -m venv venv</pre>
 
-В macOS и Linux:
+   В macOS и Linux:
 
-   ```bash
-   python3 -m venv venv
+   <pre>python3 -m venv venv</pre>
 
 4. Активируйте виртуальное окружение (если оно не активировано):
 
-В Windows:
+   В Windows:
 
-   ```bash
-   venv\Scripts\activate
+   <pre>venv\Scripts\activate</pre>
 
-В macOS и Linux:
+   В macOS и Linux:
 
    ```bash
    source venv/bin/activate
@@ -52,12 +49,11 @@ MessageBot - это проект, который позволяет связат
 
 6. Активируйте переменные окружения:
 
-В Windows:
+   В Windows:
 
-   ```bash
-   setenv.bat
+   <pre>setenv.bat</pre>
 
-В macOS и Linux:
+   В macOS и Linux:
 
    ```bash
    source setenv.sh
@@ -69,13 +65,12 @@ MessageBot - это проект, который позволяет связат
 
 7. Создайте и примените миграции:
 
-В Windows:
+   В Windows:
 
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
+   <pre>python manage.py makemigrations
+   python manage.py migrate</pre>
 
-В macOS и Linux:
+   В macOS и Linux:
 
    ```bash
    python3 manage.py makemigrations
@@ -83,36 +78,36 @@ MessageBot - это проект, который позволяет связат
 
 8. Запустите сервер разработки:
 
-В Windows:
+   В Windows:
 
-   ```bash
-   python manage.py runserver
+   <pre>python manage.py runserver</pre>
 
-В macOS и Linux:
+   В macOS и Linux:
 
    ```bash
    python3 manage.py runserver
-
-
-## API Endpoints
-
-Регистрация нового пользователя: /api/v1/sign-up/
-Вход пользователя: /api/v1/token/login/
-Выход пользователя: /api/v1/token/logout/
-Получение профиля пользователя: /api/v1/user/slug_user/
-Создание сообщения: /api/v1/create_message/
-
-## Web Endpoints
-
-Страница профиля пользователя: /user/slug_user/
-Страница регистрации: /sign-up/
-Страница входа: /login/
-Страница выхода: /logout/
-Панель администратора Django: /admin/
 
 ## Настройка Telegram
 
 Для того чтобы Telegram знал, куда отправлять сообщения, выполните следующий запрос:
 
-```bash
-https://api.telegram.org/bot{токен телеграма}/setWebhook?url={url адрес сайта}/message
+   <pre>https://api.telegram.org/bot{токен телеграма}/setWebhook?url={url адрес сайта}/message</pre>
+
+## API Endpoints
+
+Регистрация нового пользователя: /api/v1/sign-up/<br>
+Вход пользователя: /api/v1/token/login/<br>
+Выход пользователя: /api/v1/token/logout/<br>
+Получение профиля пользователя: /api/v1/user/slug_user/<br>
+Создание сообщения: /api/v1/create_message/<br>
+
+## Web Endpoints
+
+Страница профиля пользователя: /user/slug_user/<br>
+Страница регистрации: /sign-up/<br>
+Страница входа: /login/<br>
+Страница выхода: /logout/<br>
+Панель администратора Django: /admin/<br>
+
+
+PS файл setenv.sh намеренно добавлен в репозиторий для возможности проверки проекта
