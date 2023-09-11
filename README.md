@@ -7,7 +7,6 @@ MessageBot - это проект, который позволяет связат
 Для работы с проектом вам потребуется:
 
 - Python (версия 3.10)
-- Django (версия 3.x)
 - Другие зависимости, указанные в `requirements.txt`
 
 ## Установка
@@ -15,4 +14,9 @@ MessageBot - это проект, который позволяет связат
 1. Склонируйте репозиторий на свой компьютер:
 
    ```bash
-   git clone https://github.com/ZemtsovOleg/MessageBot.git
+    git clone https://github.com/ZemtsovOleg/MessageBot.git
+
+2. Установите зависимости:
+
+   ```bash
+    pip install -r requirements.txt  ```bash
